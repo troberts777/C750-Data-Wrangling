@@ -10,6 +10,7 @@
 <li>audit and clean.py</li>
 <li>data.py</li>
 <li>schema.py</li>
+<li>Resources.txt</li>
 </ul>
 
 ## OSM Files
