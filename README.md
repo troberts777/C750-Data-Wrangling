@@ -21,6 +21,5 @@
 <ul>
 <li>count tags.py</li>
 <li>users.py</li>
-<li>mapparser.py</li>
 <li>create sample.py</li>
  </ul>
