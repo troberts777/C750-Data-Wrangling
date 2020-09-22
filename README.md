@@ -15,7 +15,7 @@
 ## OSM Files
 <ul>
 <li>sample.osm</li>
- <li>map_AJ.zip</li>
+ <li>map_AJ.zip - original OSM map file</li> 
 </ul>
 
 ## Python Practice Files
