@@ -1,0 +1,7 @@
+  
+Map Area - Apache Junction, AZ, United States (data from OpenStreetMaps.org)
+
+https://www.openstreetmap.org/relation/110779#map=13/33.4006/-111.5308
+https://www.openstreetmap.org/export#map=13/33.4006/-111.5308
+
+I have lived in in Arizona since 2005 and decided to use this area for my project.
