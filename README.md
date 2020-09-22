@@ -12,7 +12,7 @@
 <li>schema.py</li>
 </ul>
 
-## Sample OSM File
+## OSM Files
 <ul>
 <li>sample.osm</li>
  <li>map_AJ.zip</li>
