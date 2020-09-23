@@ -26,6 +26,11 @@
  <li>map_AJ.zip - original OSM map file</li> 
 </ul>
 
+## Supporting Files
+<ul>
+<li>CSV files made during cleaning then loaded into SQLite</li>
+</ul>
+
 ## Python Practice Notebook
 <ul>
 <li>C750_NB_Code_Book.ipynb</li> 
