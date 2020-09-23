@@ -12,6 +12,9 @@
 <li>query.py</li>
 <li>create_db.py</li>
 <li>schema.py</li>
+<li>count tags.py</li>
+<li>users.py</li>
+<li>create sample.py</li>
 <li>Map area selected.txt</li>
 <li>Resources.txt</li>
 </ul>
@@ -21,10 +24,3 @@
 <li>sample.osm</li>
  <li>map_AJ.zip - original OSM map file</li> 
 </ul>
-
-## Python Practice Files
-<ul>
-<li>count tags.py</li>
-<li>users.py</li>
-<li>create sample.py</li>
- </ul>
