@@ -34,7 +34,7 @@ def popular_amenity():
                 
 if __name__ == '__main__':
 
-    con = sqlite3.connect("houston_texas.db") 
+    con = sqlite3.connect("AJ_AZ.db") 
     cur = con.cursor()
     print "Number of nodes: " , number_of_nodes()
     print "Number of ways: " , number_of_ways()
