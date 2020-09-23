@@ -16,6 +16,7 @@
 <li>users.py</li>
 <li>create sample.py</li>
 <li>Map area selected.txt</li>
+<li>Apache_Junction‬_OpenStreetMap.jpg</li>
 <li>Resources.txt</li>
 </ul>
 
