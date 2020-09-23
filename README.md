@@ -27,5 +27,5 @@
 
 ## Python Practice Notebook
 <ul>
-<li>somefile.ipynb</li> 
+<li>C750_NB_Code_Book.ipynb</li> 
 </ul>
