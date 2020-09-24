@@ -6,3 +6,6 @@ https://gist.github.com/carlward/54ec1c91b62a5f911c42#file-sample_project-md
 https://www.guru99.com/python-regular-expressions-complete-tutorial.html
 https://appdividend.com/2020/05/15/three-ways-to-get-file-size-in-python/
 https://sqlitebrowser.org/
+https://tools.usps.com/zip-code-lookup.htm?citybyzipcode
+https://www.zipmap.net/Arizona/Maricopa_County/Phoenix.htm
+https://www.google.com/maps/@33.5459165,-111.9348715,10.75z
