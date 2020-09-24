@@ -91,10 +91,11 @@ def improve_street_name():
             better_name = update_name(name, mapping)            
             print name, "=>", better_name
     
-    #Second Pass        
-    if "Road." in better_name:
-        better_name = better_name.replace("Road.", "Road")
-        print name, "=>", better_name    
+            #Second Pass        
+            if " Road." in better_name or " Streetick" in better_name:
+                    better_name = better_name.replace("Road.", "Road")
+                    better_name = better_name.replace(" Streetick", " Stick")    
+                    print name, "=>", better_name    
             
 
 
