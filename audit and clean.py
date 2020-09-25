@@ -51,13 +51,10 @@ def audit(osmfile):
 
 
 # Mapping for names to be updated
-mapping = { "St": "Street",
-            "Rd": "Road",
-            "Rd.": "Road",
-            "Ave": "Avenue",
-            "S L": "South L",
-            "E ": "East ",
-            "5810 A":"A",
+mapping = { "St": "Street", "Rd": "Road", "Rd.": "Road", "Ave": "Avenue", " St ": "Street",  "St": "Street", "St. ": "Street",
+            "Blvd": "Boulevard", "Ct": "Court", "Dr, ": "Drive ", " Dr ": "Drive ", "Dr. ": "Drive ", "Rd": "Road", "Rd ": "Road",
+            "Rd.": "Road", "Pl": "Place", "Ave ": "Avenue ", "Ave.": "Avenue", "ln " : "Lane", "S ": "South ", "S. ": " South ",
+            "N ": " North ", "N. ": " North ", "W " : " West ", "W. ": " West ", "E ": "East ",  "E. ": "East ", "E ": "East ",            
             "Hwy ":"Highway "
             }
 
@@ -91,9 +88,8 @@ def improve_street_name():
             better_name = update_name(name, mapping)            
             print name, "=>", better_name
     
-            #Second Pass        
-            if " Road." in better_name or " Streetick" in better_name:
-                    better_name = better_name.replace("Road.", "Road")
+            #Second Check        
+            if " Streetick" in better_name:
                     better_name = better_name.replace(" Streetick", " Stick")    
                     print name, "=>", better_name    
             
