@@ -10,7 +10,7 @@ from collections import defaultdict
 # Create Sample File
 
 
-OSM_FILE = "map_AJ.osm"  # Replace this with your osm file
+OSM_FILE = "map_PHX_Metro.osm"  # Replace this with your osm file
 SAMPLE_FILE = "sample.osm"
 
 
