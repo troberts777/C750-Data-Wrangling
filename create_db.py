@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 # Create DB
 import csv, sqlite3
 
@@ -55,10 +49,4 @@ with open('ways_tags.csv','rb') as fin:
 
 cur.executemany("INSERT INTO ways_tags (id, key, value, type) VALUES (?, ?, ?, ?);", to_db)
 con.commit()
-
-
-# In[ ]:
-
-
-
 
