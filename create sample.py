@@ -12,7 +12,7 @@ OSM_FILE = "map_PHX_Metro.osm"  # Replace this with your osm file
 SAMPLE_FILE = "sample.osm"
 
 
-k = 5 # Parameter: take every k-th top level element
+k = 30 # Parameter: take every k-th top level element
 
 def get_element(osm_file, tags=('node', 'way', 'relation')):
     """Yield element if it is the right type of tag
