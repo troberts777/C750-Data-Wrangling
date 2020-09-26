@@ -4,8 +4,6 @@ import re
 from collections import defaultdict
 
 
-# In[2]:
-
 
 # Create Sample File
 
