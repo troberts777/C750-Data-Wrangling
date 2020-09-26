@@ -7,7 +7,7 @@
 # Create DB
 import csv, sqlite3
 
-con = sqlite3.connect("AJ_AZ.db")
+con = sqlite3.connect("PHX_AZ1.db")
 con.text_factory = str
 cur = con.cursor()
 
