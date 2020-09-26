@@ -13,6 +13,7 @@
 <li>create_db.py</li>
 <li>schema.py</li>
 <li>count.py</li>
+<li>DB_Explore.py</li>
 <li>query.py</li>
 <li>create sample.py</li>
 <li>Map area selected.txt</li>
