@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 # Query DB
 import csv, sqlite3
 
@@ -44,7 +38,7 @@ if __name__ == '__main__':
     print "popular amenity: " , popular_amenity()
 
 
-# In[ ]:
+
 
 
 
