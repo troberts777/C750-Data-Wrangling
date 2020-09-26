@@ -12,7 +12,7 @@
 <li>export.py</li>
 <li>create_db.py</li>
 <li>schema.py</li>
-<li>count tags.py</li>
+<li>count.py</li>
 <li>create sample.py</li>
 <li>Map area selected.txt</li>
 <li>Apache_Junction‬_OpenStreetMap.jpg</li>
