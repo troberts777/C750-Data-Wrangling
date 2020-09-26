@@ -27,7 +27,7 @@
 <li>sample.osm</li> 
 </ul>
 
-## Python Practice Notebook
+## Python Code Notebook
 <ul>
-<li>Project_Practice_NB.ipynb</li> 
+<li>Full Code Notebook.ipynb</li> 
 </ul>
