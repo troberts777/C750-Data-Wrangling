@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 # Data to CSV
 import csv
 import codecs
@@ -12,6 +6,8 @@ import xml.etree.cElementTree as ET
 from unittest import TestCase
 import cerberus
 import schema
+
+
 
 # Make sure the fields order in the csvs matches the column order in the
 # sql table schema
@@ -32,59 +28,6 @@ NODE_TAGS_FIELDS = ['id', 'key', 'value', 'type']
 WAY_FIELDS = ['id', 'user', 'uid', 'version', 'changeset', 'timestamp']
 WAY_TAGS_FIELDS = ['id', 'key', 'value', 'type']
 WAY_NODES_FIELDS = ['id', 'node_id', 'position']
-
-# looks for the incorrect street types in the street names by comparing them to the "expected" list
-# and then puts them in a list called street_types
-# uses the regular expression "street_type_re" defined prevously to locate the street type within the street name
-def audit_street_type(street_types, street_name):
-    m = street_type_re.search(street_name)
-    if m:
-        street_type = m.group()
-        if street_type not in expected:
-            street_types[street_type].add(street_name)
-            
-# finds the street names in the map.xml file
-def is_street_name(elem):
-    return (elem.attrib['k'] == "addr:street")
-
-# executes the audit_street_type and is_street_name functions to fill the street_types dictionary
-def audit(osmfile):
-    osm_file = open(osmfile, "r")
-    street_types = defaultdict(set)
-    for event, elem in ET.iterparse(osm_file, events=("start",)):
-
-        if elem.tag == "node" or elem.tag == "way":
-            for tag in elem.iter("tag"):
-                if is_street_name(tag):
-                    audit_street_type(street_types, tag.attrib['v'])
-    osm_file.close()
-    return street_types
-
-# fixes the street type in the street name
-def update_name(name, mapping):
-    m = street_type_re.search(name)
-    if m:
-        for i in mapping:
-            if i == m.group():
-                name = re.sub(street_type_re, mapping[i], name)
-    return name
-
-# finds the zip codes in the address 
-def is_postcode(elem): 
-    return (elem.attrib['k'] == "addr:postcode" or elem.attrib['k'] == "postal_code")
-
-# creates a list of zipcodes
-def audit_postcode(postcodes, postcode):
-    postcodes[postcode].add(postcode)
-    return postcodes
-
-# updates/cleans the zipcodes 
-def update_postcode(postcode):
-    if re.findall(r'^\d{5}$', postcode): # 5 digits
-        valid_postcode = postcode
-        return valid_postcode  
-    else:
-        return None
 
 # Shape each element into several data structures
 # Clean and shape node or way XML element to Python dict
@@ -201,7 +144,11 @@ class UnicodeDictWriter(csv.DictWriter, object):
 # Iteratively process each XML element and write to csv(s)
 def process_map(file_in, validate):
 
-    with codecs.open(NODES_PATH, 'w') as nodes_file,          codecs.open(NODE_TAGS_PATH, 'w') as nodes_tags_file,          codecs.open(WAYS_PATH, 'w') as ways_file,          codecs.open(WAY_NODES_PATH, 'w') as way_nodes_file,          codecs.open(WAY_TAGS_PATH, 'w') as way_tags_file:
+    with codecs.open(NODES_PATH, 'w') as nodes_file, \
+         codecs.open(NODE_TAGS_PATH, 'w') as nodes_tags_file, \
+         codecs.open(WAYS_PATH, 'w') as ways_file, \
+         codecs.open(WAY_NODES_PATH, 'w') as way_nodes_file, \
+         codecs.open(WAY_TAGS_PATH, 'w') as way_tags_file:
 
         nodes_writer = UnicodeDictWriter(nodes_file, NODE_FIELDS)
         node_tags_writer = UnicodeDictWriter(nodes_tags_file, NODE_TAGS_FIELDS)
@@ -234,4 +181,3 @@ def process_map(file_in, validate):
 
 if __name__ == '__main__':
     process_map(OSM_FILE, validate=False)
-
