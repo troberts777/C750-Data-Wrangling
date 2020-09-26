@@ -18,7 +18,7 @@ street_type_re = re.compile(r'\S+\.?$', re.IGNORECASE)
 
 # Common street names
 expected = ["Street", "Avenue", "Boulevard", "Drive", "Court", "Place", "Square", "Lane", "Road", 
-            "Road", "Parkway", "Commons", "Close", "Highway", "Circle", "Trail", "US"]
+            "Road", "Parkway", "Freeway", "Close", "Highway", "Circle", "Trail", "US"]
 
 
 def audit_street_type(street_types, street_name):
@@ -89,8 +89,8 @@ def improve_street_name():
             print name, "=>", better_name
     
             #Second Check        
-            if " Streetick" in better_name:
-                    better_name = better_name.replace(" Streetick", " Stick")    
+            if " Streetewart" in better_name:
+                    better_name = better_name.replace(" Streetewart", " Streetewart")    
                     print name, "=>", better_name    
             
 
