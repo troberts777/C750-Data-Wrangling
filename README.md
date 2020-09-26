@@ -3,6 +3,7 @@
 ## Project Overview Notebook
 <ul>
 <li>Project_Final.ipynb</li>
+<li>Project_Final.html</li>
 </ul>
 
 ## Project Files
