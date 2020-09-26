@@ -43,7 +43,7 @@ def update_name(name, mapping):
     return name
 
 def improve_street_name():
-    st_types = audit(OSM_FILE)   
+    st_types = audit.audit(OSM_FILE)   
 
     for st_type, ways in st_types.iteritems():
         for name in ways:
