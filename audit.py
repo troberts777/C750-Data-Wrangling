@@ -80,15 +80,3 @@ def find_postcode():
     return (postcode_types, odd_postcode)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
