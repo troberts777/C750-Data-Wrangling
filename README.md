@@ -7,9 +7,9 @@
 
 ## Project Files
 <ul>
-<li>audit and clean.py</li>
-<li>data.py</li>
-<li>query.py</li>
+<li>audit.py</li>
+<li>update.py</li>
+<li>export.py</li>
 <li>create_db.py</li>
 <li>schema.py</li>
 <li>count tags.py</li>
