@@ -2,7 +2,7 @@
 
 ## Project Overview Notebook
 <ul>
-<li>somefile.ipynb</li>
+<li>Project_Final.ipynb</li>
 </ul>
 
 ## Project Files
