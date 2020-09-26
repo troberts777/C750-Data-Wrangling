@@ -4,7 +4,7 @@ import re
 from collections import defaultdict
 
 
-OSM_FILE = "map_PHX_Metro.osm" # My OSM FILE
+OSM_FILE = "sample.osm" # My OSM FILE
 
 
 # Audit file
@@ -17,7 +17,7 @@ street_type_re = re.compile(r'\S+\.?$', re.IGNORECASE)
 
 # Common street names
 expected = ["Street", "Avenue", "Boulevard", "Drive", "Court", "Place", "Square", "Lane", "Road", 
-            "Road", "Parkway", "Commons", "Close", "Highway", "Circle", "Trail", "US"]
+            "Road", "Parkway", "Freeway", "Close", "Highway", "Circle", "Trail", "US", "60"]
 
 
 def audit_street_type(street_types, street_name):
@@ -78,9 +78,6 @@ def find_postcode():
 
 
     return (postcode_types, odd_postcode)
-
-
-
 
 
 
