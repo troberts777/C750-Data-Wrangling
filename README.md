@@ -4,7 +4,6 @@
 <ul>
 <li>Project_Final.ipynb</li>
 <li>Project_Final.html</li>
-<li>Project_Final.pdf</li>
 </ul>
 
 ## Project Files
