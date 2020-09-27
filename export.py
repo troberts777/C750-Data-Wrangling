@@ -6,7 +6,7 @@ import xml.etree.cElementTree as ET
 from unittest import TestCase
 import cerberus
 import schema
-
+import update
 
 
 # Make sure the fields order in the csvs matches the column order in the
