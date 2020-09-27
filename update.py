@@ -1,6 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
+# Update Street names and Postal Codes
+import re
 import audit
 
 
@@ -72,7 +71,7 @@ def update_postcode(odd_postcode):
 
 
 def improve_postcode():
-    postcode_all = find_postcode()
+    postcode_all = audit.find_postcode()
 
     for postcode in postcode_all[1]:
         better_postcode = update_postcode(postcode)
