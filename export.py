@@ -60,10 +60,10 @@ def shape_element(element, node_attr_fields=NODE_FIELDS, way_attr_fields=WAY_FIE
                     node_tag['key'] = aft_colon[0]
                     if node_tag['type'] == "addr" and node_tag['key'] == "street":
                         # update street name
-                        node_tag['value'] = update_name(tag.attrib['v'], mapping) 
+                        node_tag['value'] = update.update_name(tag.attrib['v'], mapping) 
                     elif node_tag['type'] == "addr" and node_tag['key'] == "postcode":
                         # update post code
-                        node_tag['value'] = update_postcode(tag.attrib['v']) 
+                        node_tag['value'] = update.update_postcode(tag.attrib['v']) 
             tags.append(node_tag)
         
         return {'node': node_attribs, 'node_tags': tags}
